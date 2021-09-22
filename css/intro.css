@@ -1,0 +1,65 @@
+/*** intro sections ***/
+.intro {
+	width: 1117px;
+	height: 560px;
+	padding-top: 99.18px;
+	margin-left: 180px;
+}
+
+.intro__container {
+	display: flex;
+	position: absolute;
+	width: 1117px;
+	height: 560px;
+	background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+	border-radius: 50px;
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+	margin-left: 55px;
+}
+
+.intro__img {
+	width: 477px;
+	height: 504px;
+}
+
+.intro__inner {
+	width: 474px;
+	height: 170px;
+	padding-top: 125px;
+	margin-left: 92px;
+}
+
+.intro__heading {
+	width: 475px;
+	height: 100px;
+	font-family: Helvetica;
+	font-weight: bold;
+	font-size: 40px;
+	line-height: 130%;
+	color: #212353;
+}
+
+.intro__paragraph {
+	width: 474px;
+	height: 170px;
+	font-family: Avenir;
+	font-weight: 500;
+	font-size: 18px;
+	line-height: 160%;
+	color: #4B5D68;
+}
+@media screen and (max-width: 768px) {
+	.intro{
+		margin-left: 0;
+		min-width: 320px;
+	}
+	.intro__container{
+		margin-left: 5%;
+		max-width: 200px;
+		border-radius: 100px;
+	}
+	.intro__img{
+		display: none;
+	}
+}

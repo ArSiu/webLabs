@@ -1,0 +1,27 @@
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+@keyframes animation {
+    0% {
+        box-shadow: 0 0 0 0 rgba(29, 171, 209, 0.6), 0 0 0 0 rgba(29, 171, 209, 0.6);
+    }
+    30% {
+        box-shadow: 0 0 0 20px rgba(29, 171, 209, 0), 0 0 0 0 rgba(29, 171, 209, 0.6);
+    }
+    60% {
+        box-shadow: 0 0 0 20px rgba(29, 171, 209, 0), 0 0 0 10px rgba(29, 171, 209, 0);
+    }
+    100% {
+        box-shadow: 0 0 0 0 rgba(29, 171, 209, 0), 0 0 0 10px rgba(29, 171, 209, 0);
+    }
+
+}
