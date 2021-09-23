@@ -379,7 +379,12 @@
 
 @media screen and (max-width: 768px) {
 	.features{
-		margin-left: 5%;
+		margin-left: 0;
+		width: 320px;
+		margin: 0 auto;
+	}
+	.message__icon{
+		display: none;
 	}
 	.features__top{
 		flex-direction: column;
@@ -397,10 +402,118 @@
 		margin: 0;
 		padding-top: 80px;
 	}
+	.features__title{
+		width: 320px;
+	}
+
+	.features__heading{
+		width: 200px;
+		margin: auto;
+		margin-left: 50px;
+		
+	}
 	.features__paragraph{
 		height: auto;
+		padding-top: 50px;
+		margin: auto;
+		text-align: center;
+		justify-content: center;
+		font-family: Avenir;
+		font-weight: 500;
+		font-size: 17px;
+		line-height: 160%;
+		color: #4B5D68;
+		height: auto;
 		width: auto;
-		margin-left: 5%;
+		margin-left: 0;
+		font-size: 12px;
+		padding-right: 0px;
+	}
+	.features__top{
+		width: 320px;
+	}
+	.features__bottom{
+		width: 320px;
+	}
+	.search__bg{
+		display: none;
+	}
+	.search__elips{
+		display: none;
+	}
+	.search__vector{
+		display: none;
+	}
+	.search__pic{
+		display: none;
+	}
+	.access__bg{
+		display: none;
+	}
+	.features__search{
+		margin-left: 0px;
+		width: 300px;
+	}
+	.search__inner{
+		width: 250px;
+		height: 280px;
+		background: rgba(240, 99, 184, 0.18);
+		margin-left: 40px;
+		border-radius: 10px;
+	}
+	.search__inner * {
+		margin-left: 10px;
+	}
+	.access__inner{
+		margin-top: 160px;
+		width: 250px;
+		height: 280px;
+		background: rgba(240, 99, 184, 0.18);
+		margin-left: 40px;
+		border-radius: 10px;
+	}
+	.access__inner * {
+		margin-left: 10px;
+	}
+	.print__bg{
+		display: none;
+	}
+	.security__bg{
+		display: none;
+	}
+	.print__inner{
+		width: 250px;
+		margin-top: -50px;
+		height: 280px;
+		background: rgba(240, 99, 184, 0.18);
+		margin-left: 40px;
+		border-radius: 10px;
+	}
+	.print__inner * {
+		margin-left: 10px;
+	}
+	.features__security{
+		width: 320px;
+	}
+	.features__print{
+		width: 320px;
+	}
+	.features__print{
+		width: 320px;
+	}
+	.features__paragraph{
+		width: 320px;
+	}
+	.security__inner{
+		width: 250px;
+		margin-top: 90px;
+		height: 280px;
+		background: rgba(240, 99, 184, 0.18);
+		margin-left: 40px;
+		border-radius: 10px;
+	}
+	.security__inner * {
+		margin-left: 10px;
 	}
 	
 }
