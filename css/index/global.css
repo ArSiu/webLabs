@@ -1,0 +1,18 @@
+/*** variables ***/
+body {
+    background: linear-gradient(#F6FAFD 100%, #FFFFFF 100%);
+    margin: 0 auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    display: block;
+}
+
+button {
+    outline: none;
+    border: none;
+}
