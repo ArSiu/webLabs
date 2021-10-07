@@ -1,0 +1,35 @@
+.header {
+	display: flex;
+	text-align: center;
+	align-items: center;
+	justify-content: space-between;
+	background-color: #F2F3F4;
+	border-radius: 15px;
+}
+
+.header__nav {
+	display: flex;
+	align-items: center;
+}
+
+.header__nav-ul {
+	display: flex;
+}
+
+.header__nav-ul a{
+	margin-right: 40px;
+	font-family: Avenir;
+	font-weight: 600;
+	font-size: 20px;
+	line-height: 160%;
+	color: #4B5D68;
+}
+
+.header__title {
+	margin-left: 20px;
+	font-family: Avenir;
+	font-weight: 700;
+	font-size: 25px;
+	line-height: 160%;
+	color: #3d3d5b;
+}

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Create</title>
+	<link rel="stylesheet" type="text/css" href="css/create/styles.css">
+	<link href="https://fonts.googleapis.com/css2?family=Avenir:wght@400;500;900&display=swap"
+    rel="stylesheet">
+</head>
+<body>
+	<header class="header">
+		<div class="header__right">
+			<nav class="header__nav">
+				<a class="header__title">My farm</a>
+				<ul class="header__nav-ul">
+					<li>
+						<a class="header__nav-mylivestock" href="index.html">My Livestock</a>
+					</li>
+					<li>
+						<a class="header__nav-addlivestock" href="create.html">Add Livestock</a>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+
+	<section class="input">
+		<form class="input__form">
+            <p class="input__form-title" id="title">Create Farm</p>
+
+            <div class="input__form-input">
+            	<label for="name" class="lable">Name</label>
+				<input class="name-input" id="name" type="text" placeholder="name">
+            </div>
+
+            <div class="input__form-input">
+            	<label for="location" class="lable">Location</label>
+				<input class="location-input" id="location" type="text" placeholder="Location">
+            </div>
+
+            <div class="input__form-input">
+            	<label for="amout_of_livestock" class="lable">Amout Of Livestock</label>
+				<input class="amout_of_livestock-input" id="amout_of_livestock" type="number" placeholder="Livestock">
+            </div>
+
+            <div class="input__form-input">
+            	<label for="power_of_vents" class="lable">Power of vents</label>
+				<input class="power_of_vents-input" id="power_of_vents" type="number" placeholder="Watts">
+            </div>
+
+            <button id="button__submit" type="submit" class="button__submit">Submit</button>
+    	</form>
+	</section>
+	<script type="module" src="js/create.js"></script>
+</body>
+</html>
