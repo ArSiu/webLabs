@@ -45,6 +45,7 @@ document.addEventListener("DOMContentLoaded",() => {
     }
     renderFarms(farms);
     console.log(farms);
+    console.log(index);
 });
 
 searchButton.addEventListener("click", () => {
@@ -70,15 +71,32 @@ countButton.addEventListener("click", () => {
     countVal.innerHTML = calcAmountOfLivestock(farms);
 });
 
-window.removeFarm = (id) => {
-    const farmToDel = farms.map(farms => farms.id);
-    farms.splice(farmToDel.indexOf(id), 1);
-    localStorage.setItem('farms', JSON.stringify(farms));
-    renderFarms(farms);
+window.removeFarm = (idDel) => {
+    let tempfarms = [];
+    var isOnDelElem = false;
+    for (const farm of farms) {
+        if(farm.id == idDel && isOnDelElem == false) {
+            isOnDelElem = true;
+            continue;
+        } else {
+            if(isOnDelElem != false){
+                farm.id -=1;
+                tempfarms.push(farm)
+            }else{
+                tempfarms.push(farm)
+            }
+            
+        }
+    }
+    farms = tempfarms;
+    localStorage.setItem('index', JSON.stringify(index-1));
+    localStorage.setItem('farms', JSON.stringify(tempfarms));
+    renderFarms(tempfarms);
 }
 
 window.editFarm = (id) => {
     localStorage.setItem('editFarm',JSON.stringify(id));
     window.location.href = "create.html";
 }
-
+//const farmToDel = farms.map(farms => farms.id);
+//farms.splice(farmToDel.indexOf(id), 1);

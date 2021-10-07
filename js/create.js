@@ -20,12 +20,15 @@ submitButton.addEventListener("click", event => {
         editFarm(editId,{name, location, amountOfLivestock, powerOfVents});
         localStorage.removeItem('editFarm');
         clearInput();
+        window.location.href = "index.html";
     }else{
+        index++;
         event.preventDefault();
         const {id, name, location, amountOfLivestock, powerOfVents} = getInputValues();
-        localStorage.setItem('index', JSON.stringify(index++));
         addFarm({id, name, location, amountOfLivestock, powerOfVents});
+        localStorage.setItem('index', JSON.stringify(index));
         clearInput();
+        window.location.href = "index.html";
     }
 })
 
@@ -37,17 +40,21 @@ const addFarm = ({id, name, location, amountOfLivestock, powerOfVents}) => {
         amountOfLivestock,
         powerOfVents,
     };
+    for(let i in newFarm){
+        if (newFarm[i] =="") {
+            alert("invalid input");
+            return null;
+        }
+    }
     farms.push(newFarm);
     localStorage.setItem('farms', JSON.stringify(farms));
     console.log(farms);
+    console.log(index);
 }
-
-
 
 const editFarm = (id,{name, location, amountOfLivestock, powerOfVents}) => {
     console.log(editId);
     console.log(farms);
-    console.log(farms[editId]);
     const newFarm = {
         id,
         name,
@@ -55,9 +62,17 @@ const editFarm = (id,{name, location, amountOfLivestock, powerOfVents}) => {
         amountOfLivestock,
         powerOfVents,
     };
+    console.log(newFarm.amountOfLivestock);
+    for(let i in newFarm){
+        if (newFarm[i] =="") {
+            alert("invalid input");
+            return null;
+        }
+    }
     farms[editId] = newFarm;
     localStorage.setItem('farms', JSON.stringify(farms));
     console.log(farms[editId]);
+    console.log(editId);
 }
 
 
