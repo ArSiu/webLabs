@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>My Farm</title>
+	<link rel="stylesheet" type="text/css" href="css/index/styles.css">
+	<link href="https://fonts.googleapis.com/css2?family=Avenir:wght@400;500;900&display=swap"
+    rel="stylesheet">
+</head>
+<body>
+	
+	<header class="header">
+		<div class="header__right">
+			<nav class="header__nav">
+				<a class="header__title">My farm</a>
+				<ul class="header__nav-ul">
+					<li>
+						<a class="header__nav-mylivestock" href="index.html">My Livestock</a>
+					</li>
+					<li>
+						<a class="header__nav-addlivestock" href="create.html">Add Livestock</a>
+					</li>
+				</ul>
+			</nav>
+		</div>
+		<div class="header__right">
+			<form>
+	            <input id="search__input" class="header__search__input" type="text" placeholder="Type something...">
+		    </form>
+		    <button id="search__button" class="header__search" type="button">Search</button>
+		    <button id="clear__button" class="header__clear" type="button">Clear</button>
+		</div>
+	</header>
+
+	<aside class="aside">
+		<div class="aside__container">
+			<p class="aside__text-title">Manage  Livestock</p>
+			<div class="aside__sort">
+	        	<label for="switch" class="switch_lable">Sort by livestock</label>
+	        	<label class="switch">
+                    <input type="checkbox" name="switch" id="switch">
+                    <span class = "slider"></span>
+                </label>
+			</div>
+			<div class="aside__line"></div>
+			<p class="aside__text-count">Count total of livestock</p>
+			<button id="count__button" class="aside__button-count" type="button">Count</button>
+			<p class="aside__text-count">Total amount of livestock:</p>
+			<h5 id="count__value" class="cout__val"></h5>
+		</div>
+
+		<ul id="items" class="aside_items">
+			<!-- <li>
+			    <img class="item__photo" src="img/farm.png" alt="farm">
+			    <div class="item">
+			        <h3 class="item__name">Name: ${name}</h3>
+			        <h5 class="item__location">Location: ${location}</h5>
+			        <h5 class="item__amoutOfLivestock">Amout Of Livestock: ${amountOfLivestock}</h5>
+			        <h5 class="item__powerOfVents">Power Of Vents: ${powerOfVents}</h5>
+			        <button class="button__remove" onClick='editFarm(${id})'>Edit</button>
+			        <button class="button__remove" onClick='removeFarm(${id})'>Remove</button>
+			    </div>
+			</li> -->
+    	</ul>
+
+	</aside>
+	<script type="module" src="js/index.js"></script>
+</body>
+</html>
