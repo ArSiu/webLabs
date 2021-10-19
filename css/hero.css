@@ -1,0 +1,139 @@
+/*** hero ***/
+.hero {
+	width: 1248px;
+	height: 564px;
+	margin-left: 240px;
+	padding-top: 130px;
+}
+
+.hero__container {
+	display: flex;
+	position: relative;
+}
+
+.hero__inner {
+	justify-content: center;
+}
+
+.hero__heading {
+	width: 645px;
+	height: 184px;
+	font-family: Helvetica;
+	font-weight: bold;
+	font-size: 80px;
+	line-height: 110%;
+	color: #212353;
+}
+
+.hero__paragraph {
+	width: 380px;
+	height: 120px;
+	font-family: Avenir;
+	font-weight: 500;
+	font-size: 18px;
+	line-height: 160%;
+	color: #4B5D68;
+}
+
+.hero__button {
+	width: 170px;
+	height: 60px;
+	margin-top: 50px;
+	background: #9C69E2;
+	border-radius: 50px;
+	font-family: Avenir;
+	font-style: normal;
+	font-weight: 800;
+	font-size: 18px;
+	line-height: 160%;
+	border: none;
+	color: #FFFFFF;
+	animation: animation 2s linear infinite;
+}
+
+.hero__img {
+	width: 885px;
+	height: 468px;
+	margin-left: -310px;
+	margin-top: 130px;
+}
+
+@media screen and (max-width: 768px){
+	.hero__container{
+		position: static;
+	}
+	.hero{
+		margin-top: -75px;
+		margin-left: 5%;
+		width: auto;
+	}
+	.hero__heading{
+		padding-left: 20px;
+		width: auto;
+		font-family: Helvetica;
+		font-weight: bold;
+		font-size: 30px;
+		line-height: 110%;
+		color: #212353;
+	}
+	.hero__paragraph{
+		padding-left: 20px;
+		margin-top: -80px;
+		width: auto;
+		font-family: Avenir;
+		font-weight: 500;
+		font-size: 15px;
+		line-height: 160%;
+		color: #4B5D68;
+	}
+	.hero__img{
+		display: none;
+	}
+	.hero__inner{
+		flex-direction: column;
+	}
+	.hero__heading{
+		padding-top: 10px;
+	}
+}
+@media screen and (max-width: 320px){
+	.hero__container{
+		position: static;
+	}
+	.hero{
+		margin-top: -75px;
+		margin-left: 0;
+		width: 320px;
+	}
+	.hero__heading{
+		padding-left: 20px;
+		width: 300px;
+		font-family: Helvetica;
+		font-weight: bold;
+		font-size: 30px;
+		line-height: 110%;
+		color: #212353;
+	}
+	.hero__paragraph{
+		padding-left: 20px;
+		margin-top: -80px;
+		width: 200px;
+		font-family: Avenir;
+		font-weight: 500;
+		font-size: 15px;
+		line-height: 160%;
+		color: #4B5D68;
+	}
+	.hero__button{
+		margin-left: 20px;
+	}
+	.hero__img{
+		display: none;
+	}
+	.hero__inner{
+		flex-direction: column;
+	}
+	.hero__heading{
+		padding-top: 10px;
+	}
+}
