@@ -1,0 +1,22 @@
+.containerAbout {
+	display: flex;
+	justify-content: center;
+}
+
+.liItem {
+	width: 346px;
+	line-height: 459px;
+	text-decoration: none;
+	text-align: left;
+	padding-left: 30px;
+	padding-top: 15px;
+	margin: 10px;
+    border-radius: 10px;
+    font-family: Avenir;
+	font-weight: 600;
+	font-size: 15px;
+	line-height: 160%;
+	color: #566573;
+	background-color: #F2F3F4;
+	box-shadow: 7px 5px 5px #A1A8A9;
+}
