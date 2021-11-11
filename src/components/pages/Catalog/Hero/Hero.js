@@ -68,8 +68,7 @@ const Hero = () => {
 
 	function SearchImpl(){	
 		const title = document.getElementById('input').value
-		let temp = farms.filter(farm => farm.name.search(title) !== -1);
-		setFarmRender(temp);
+		let temp = axios.get(`http://localhost:8080/farm/search?name=${title}`).then((result) => {setFarmRender(result.data)});
 	}
 
 	function FilterItem(props) {
@@ -97,22 +96,15 @@ const Hero = () => {
 
 	function filterByAmountOfLivestock(){
 		let sortedFarms = Array.from(farms);
-	    sortedFarms.sort((farm1, farm2) => farm2.amountOfLivestock - farm1.amountOfLivestock);
-	    setFarmRender(sortedFarms);
+	    let temp = axios.get(`http://localhost:8080/farm/sort?name=amountOfLiveStocks`).then((result) => {setFarmRender(result.data)});
 	}
 
 	function filterByPrice(){
 		let sortedFarms = Array.from(farms);
-	    sortedFarms.sort((farm1, farm2) => farm2.price - farm1.price);
-	    setFarmRender(sortedFarms);
+	    let temp = axios.get(`http://localhost:8080/farm/sort?name=price`).then((result) => {setFarmRender(result.data)});
 	}
 
 	
 }
-
-
-
-
-
 
 export default Hero;
